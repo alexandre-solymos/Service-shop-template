@@ -9,29 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500&display=swap"
         as="style" onload="this.rel='stylesheet'">
+    <script>
+        var myVar;
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("load").style.display = "none";
+        }
+    </script>
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="load">
+        <div id="loader"></div>
+    </div>
+
     <section class="one">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12-m">
-                    <div class="section-one-left">
-                        <h1>Take Services and let's go</h1>
-                        <h2>Have any Services on your mind . just order now</h2>
-                        <a href="">Découvre nos offres</a>
-                    </div>
-                </div>
-
-                <div class="col-6-m">
-                    <div class="box-row">
-                        Bow Two
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="bubbles">
             <div class="bubble"></div>
             <div class="bubble"></div>
@@ -40,11 +35,35 @@
             <div class="bubble"></div>
             <div class="bubble"></div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12-m">
+                    <div class="section-one-left">
+                        <h1>Take Services and let's go</h1>
+                        <h2>Have any Services on your mind . just order now</h2>
+                        <a class="btn-grad" href="sd">Découvre nos offres</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <section class="two">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12-m">
+                    <div class="section-one-left">
+                        <h3>Take Services and let's go</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea voluptate consequatur,
+                            temporibus ipsam at quia consequuntur fuga doloremque velit ab qui modi tempora recusandae
+                            amet laboriosam error eius quod!</p>
+                        <a class="btn-grad" href="sd">Découvre nos offres</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 

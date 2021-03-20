@@ -5,6 +5,10 @@
     font-family: 'Fira Sans Condensed';
 
 }
+
+a {
+    text-decoration: none;
+}
 .container {
     width: 90%;
     margin-left: auto;
@@ -274,41 +278,6 @@
     }
 }
 
-
-.StripeElement {
-    box-sizing: border-box;
-    height: 40px;
-    padding: 10px 12px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: white;
-    box-shadow: 0 1px 3px 0 #e6ebf1;
-    -webkit-transition: box-shadow 150ms ease;
-    transition: box-shadow 150ms ease;
-}
-
-.StripeElement--focus {
-    box-shadow: 0 1px 3px 0 #cfd7df;
-}
-
-.StripeElement--invalid {
-    border-color: #fa755a;
-}
-
-.StripeElement--webkit-autofill {
-    background-color: #fefde5 !important;
-}
-
-section.one {
-    min-height: 80vh;
-    background: #f5d038;
-    color: #fff;
-}
-
-.section-one-left {
-    margin-top: 10em;
-}
-
 .bubbles{
     position:absolute;
     width:100%;
@@ -370,17 +339,70 @@ section.one {
     animation-delay:3s;
   }
   @keyframes rise{
-    0%{
-      bottom:-100px;
-      transform:translateX(0);
-    }
-    50%{
-      transform:translate(100px);
-    }
     100%{
-      bottom:1080px;
-      transform:translateX(-200px);
+      bottom:80vh;
     }
+  }
+  
+  section.one {
+    min-height: 80vh;
+    background: #f5d038;
+    color: #fff;
+}
+
+.section-one-left {
+    margin-top: 10em;
+}
+
+  .btn-grad {background-image: linear-gradient(to right, #ffffff 0%, #FFFFFF  51%, #ECE9E6  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: #f5d038;            
+     box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #f5d038;
+     text-decoration: none;
+   }
+
+   #loader {
+    width: 60px;
+    height: 60px;
+    margin-top: 17em;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #48c2bc00;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+   #load {
+    background-image: linear-gradient(to right, #ffb347 0%, #ffcc33  51%, #ffb347  100%);
+    min-height: 102vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
   }
 
   section.two {
