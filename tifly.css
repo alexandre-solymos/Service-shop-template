@@ -2,8 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans Condensed';
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -268,9 +267,9 @@ a {
 }
 
 .bubbles{
-    position:absolute;
+    position: absolute;
     width:100%;
-    min-height: 80vh;
+    min-height: 100vh;
     z-index:0;
     overflow:hidden;
     top:0;
@@ -332,15 +331,7 @@ a {
       bottom:80vh;
     }
   }
-  
-  section.one {
-    min-height: 80vh;
-    background: #FFC73B;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    border-radius: 0 0rem 10em 0em;
-}
+
 
   .btn-grad {background-image: linear-gradient(to right, #ffffff 0%, #FFFFFF  51%, #ECE9E6  100%)}
   .btn-grad {
@@ -362,6 +353,120 @@ a {
      text-decoration: none;
    }
 
+   /* MENU */
+
+   /* Navbar */
+.navbar {  
+    display:flex;
+    align-items:center; 
+    justify-content:space-between;   
+    padding:10px;
+    font-size:1.1rem;
+    background:#48c2bc;
+    color:#fff;
+    z-index: 2;
+    padding-left: 1.5rem;
+    height: 5rem;
+  }
+
+  .navbar a {
+    color:#fff; 
+    text-decoration:none;
+  }
+  .navbar__links { 
+    display:flex;  
+  }
+  .navbar__link { 
+    padding:0 10px;
+  }
+  .burger {
+    display:none;
+  }
+  
+  /*  Small device */
+  @media screen and (max-width:767.98px) {
+    .navbar__links { 
+      display:flex;
+      flex-direction:column;
+      width:0;
+      height:calc(100vh - 65px);  
+      position:absolute;
+      top:65px;
+      right:0;     
+      background:#48c2bce0;     
+      transition: all .5s ease-in-out;
+      overflow: hidden;
+    }
+    .show-nav .navbar__links { 
+      width:100vw;    
+      transform: translateX(0);
+      z-index: 2;
+    } 
+    .navbar__link {    
+      transform: translateX(101%);
+      transition: all .5s ease-in-out;
+    }
+    .show-nav .navbar__link  {        
+      transform: translateX(0);    
+    }   
+    .navbar__link > a {
+      display:block;
+      padding:1rem;
+      font-size:1.6rem;
+      transition: all .4s ease-in-out;
+    }
+    .navbar__link > a:hover {
+      padding-left:2rem;
+      letter-spacing:5px;
+    }
+    
+    /* Toggle menu */
+    .burger {
+      display:block;
+      position:relative;
+      padding:0;
+      width:45px;
+      height:45px;
+      cursor:pointer;
+      margin-top: 1rem;
+      z-index: 2;
+    }
+    .bar::before, .bar::after {
+      content:"";
+      width:30px;
+      height:4px;
+      position:absolute; 
+      left:0;  
+      background:#fff; 
+      transition: all .5s ease-in-out;
+      margin-top: 1em;
+    }
+    .bar::before {
+      transform:translateY(-12px)
+    }
+    .show-nav .bar::before {
+      transform:rotate(45deg);
+    }
+    .show-nav .bar::after {
+      transform:rotate(-45deg);
+    }
+    
+  }
+  
+  /*  Medium device - Bonus */
+  @media screen and (min-width:768px) {
+    .navbar__link > a::after {
+      display:block;
+      content:"";
+      width:0;
+      height:1px;
+      transition:width .4s;
+    }
+    .navbar__link:hover > a::after {
+      width:100%;
+    }
+  }
+    
    #loader {
     width: 60px;
     height: 60px;
@@ -393,6 +498,29 @@ a {
     justify-content: center;
   }
 
+  section.one {
+    min-height: 100vh;
+    background: #FFC73B;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /*border-radius: 0 0rem 10em 0em;*/
+    text-align: center;
+}
+
+  .section-one-left h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+  }
+
+  .section-one-left h2 {
+    font-size: 1.3rem;
+    color: #191919;
+    margin-bottom: 2rem;
+  }
+
+  
 
 
 /** SECTION TWO **/ 
@@ -434,6 +562,18 @@ a {
     background-color: #FFC73B;
 }
 
+.bounce {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce-3 {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-1rem); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
 
 /** SECTION THREE **/
 
