@@ -96,13 +96,10 @@ a {
     clear: both;
 }
 
-.hidden-m {
-    display: none;
-}
 
 @media only screen and (min-width: 33.75em) {  /* 540px */
     .container {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -155,14 +152,11 @@ a {
         width: 100%;
     }
 
-    .hidden-t {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 60em) { /* 960px */
     .container {
-        width: 75%;
+        width: 85%;
         max-width: 60rem;
     }
 
@@ -214,9 +208,6 @@ a {
         width: 100%;
     }
 
-    .hidden {
-        display: none;
-    }
 }
 
 
@@ -273,9 +264,6 @@ a {
         width: 100%;
     }
 
-    .hidden-l {
-        display: none;
-    }
 }
 
 .bubbles{
@@ -348,10 +336,9 @@ a {
     min-height: 80vh;
     background: #f5d038;
     color: #fff;
-}
-
-.section-one-left {
-    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0rem 10em 0em;
 }
 
   .btn-grad {background-image: linear-gradient(to right, #ffffff 0%, #FFFFFF  51%, #ECE9E6  100%)}
@@ -405,8 +392,43 @@ a {
     justify-content: center;
   }
 
+
+
+/** SECTION TWO **/ 
+
   section.two {
     min-height: 80vh;
-    background: #48c2bc;
+    /**background: #48c2bc;*/
     color: #fff;
+    margin-top: 4em;
+}
+
+.block {
+    padding: 2em;
+    background-image: url(https://templatekit.mattsapii.co/padora/wp-content/uploads/sites/5/2020/12/pattern-column.png);
+    background-size: contain;
+    margin: 4.5em 0.5em 0em 0.5em;
+}
+
+.block img {
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0px 12px 18px 0px rgb(0 0 0 / 10%);
+    margin-top: -5em;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-one {
+    background-color: #F73775;
+}
+
+.card-two {
+    background-color: #00CDC4;
+}
+
+.card-three {
+    background-color: #FFC73B;
 }
