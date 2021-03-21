@@ -497,6 +497,8 @@ a {
     z-index: 1;
     display: flex;
     justify-content: center;
+    margin-top: -5rem;
+    z-index: 2;
   }
 
   section.one {
