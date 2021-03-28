@@ -254,7 +254,7 @@
 .bubbles{
     position: absolute;
     width:100%;
-    min-height: 100vh;
+    min-height: 118vh;
     z-index:0;
     overflow:hidden;
     top:0;
@@ -510,7 +510,7 @@ section.one {
   text-align: center;
   padding-top: 2em;
   /*background-image: url(https://i.postimg.cc/KjryJ0BF/185.png);*/
-  background-image: url(https://i.postimg.cc/QCX0pmqR/185-testtest.png);
+  background-image: url(https://i.postimg.cc/QCX0pmqR/185-testtest.png), linear-gradient(110deg, #ffc73b 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #00cdc4 70%, #48c2bc 70%);
   background-repeat: no-repeat;
   background-position: right;
 }
