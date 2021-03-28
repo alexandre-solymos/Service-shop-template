@@ -663,35 +663,18 @@ section.two {
 }
 /** SECTION THREE **/
 
-.block-three {
-  border-radius: 1em;
-  height: 35rem;
-  margin: 1rem;
+.box-three-section {
+  text-align: center;
+    box-shadow: 0 2px 40px rgb(0 0 0 / 8%);
+    margin: 1rem;
+    padding: 2rem;
 }
 
-.block-three-r {
-  border-radius: 1em;
-  height: 17rem;
-  margin: 1rem;
+.box-three-section:hover {
+  box-shadow: 0 2px 40px rgb(0 0 0 / 11%);
 }
 
-.card-three-one{
-  background-color: #F73775;
+.box-svg {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-three-one img{
-  width: 50%;
-  margin-top: -2em;
-}
-
-
-.card-three-two {
-  background-color: #00CDC4;
-}
-
-.card-three-three {
-  background-color: #191919;
+  justify-content: center;  
 }
