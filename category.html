@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet de fin d'année avec mon framework Respi.CSS</title>
+    <link rel="stylesheet" href="respi.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
+        as="style" onload="this.rel='stylesheet'">
+    <script>
+        function myFunction() {
+            setTimeout(showPage, 2);
+        }
+        function showPage() {
+            document.getElementById("load").style.display = "none";
+        }
+
+    </script>
+
+
+</head>
+<div class="container">
+    <nav class="navbar dark-mode" role="navigation">
+        <div class="navbar__logo"><a href="https://shtheme.com/demosd/orgafe/?product=fresh-broccoli"><img
+                    src="https://shtheme.com/preview/orgafe/img/logo/logo.png" alt=""></a></div>
+        <ul class="navbar__links">
+            <li class="navbar__link"><a href="#">Accueil</a></li>
+            <li class="navbar__link"><a href="#">Services</a></li>
+            <li class="navbar__link"><a href="#">Missions</a></li>
+            <li class="navbar__link"><a href="#">Portfolio</a></li>
+            <li class="navbarmark"><a href="#">Contact</a></li>
+            <li class="navbar__link">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5 4H19C19.5523 4 20 4.44771 20 5V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4ZM2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V5ZM12 12C9.23858 12 7 9.31371 7 6H9C9 8.56606 10.6691 10 12 10C13.3309 10 15 8.56606 15 6H17C17 9.31371 14.7614 12 12 12Z"
+                        fill="#00CDC4" />
+                </svg>1
+            </li>
+        </ul>
+        <div class="burger">
+            <span class="bar"></span>
+        </div>
+    </nav>
+</div>
+
+<body>
+
+    <section class="twoone">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12-m">
+                    <div class="text">
+                        <h3>Stunning Homepages</h3>
+                        <p>Choose a homepage to start navigating Orgafe. Build strong & impressive websites using Orgafe
+                            premade theme.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-6-m col-4-t">
+                    <div class="demo-space">
+                        <div class="demo-block">
+                            <a href="#">
+                                <img src="https://shtheme.com/preview/orgafe/img/demos/home1.jpg" alt="">
+                                <span>Voir le produit</span>
+                            </a>
+                        </div>
+                        <div class="demo-text">
+                            SEO
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6-m col-4-t">
+                    <div class="demo-space">
+                        <div class="demo-block">
+                            <a href="#">
+                                <img src="https://shtheme.com/preview/orgafe/img/demos/home1.jpg" alt="">
+                                <span>Voir le produit</span>
+                            </a>
+                        </div>
+                        <div class="demo-text">
+                            DESIGN
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6-m col-4-t">
+                    <div class="demo-space">
+                        <div class="demo-block">
+                            <a href="#">
+                                <img src="https://shtheme.com/preview/orgafe/img/demos/home1.jpg" alt="">
+                                <span>Voir le produit</span>
+                            </a>
+                        </div>
+                        <div class="demo-text">
+                            DEVELOPPEMENT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        const burger = document.querySelector('.burger');
+        burger.addEventListener('click', (e) => {
+            navbar.classList.toggle('show-nav');
+        });
+    }
+    toggleMenu();
+</script>
+
+</html>
